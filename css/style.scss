@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Muli";
+}
+
+.gallery__item {
+  height: 15em;
+  max-width: 100%;
+  margin: 0.25em 0.5em;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bodyContainer {
+  background-color: #ffffff;
+  border: 8px solid #401c3e;
+  border-radius: 50px;
+  height: 100vh;
+  margin: 2%;
+}
+
+.boldFont {
+  font-weight: 800;
+}
+
+.textMuted {
+  color: gray;
+}
+
+.colHalf {
+  width: 40vw;
+}
+
+.colFull {
+}
+
+/*==========
+     NAVBAR
+  ==========*/
+
+#navBar {
+  background-color: #401c3e;
+  height: 5em;
+  width: 15em;
+  margin: 0 auto;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+.navbarList {
+  margin: 0;
+  padding: 0;
+  height: 5em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navItem {
+  list-style: none;
+}
+
+.navLink {
+  color: gray;
+  text-decoration: none;
+}
+
+.navLink:hover,
+.navLink:focus {
+  color: white;
+}
+
+.active a {
+  color: white;
+}
+
+/*==========
+     MAIN
+  ==========*/
+
+/*-------Welcome Part------*/
+
+.welcomePart {
+  text-align: center;
+}
+
+/*-------Orange Box Part------*/
+
+#orangeBox {
+  background-color: #ffc50a;
+  margin: 1em;
+  border: 0;
+  border-radius: 1em;
+}
+
+#priWhite {
+  background-color: white;
+  margin: 0 1em;
+  border: 0;
+  border-radius: 1em;
+}
+
+@media (orientation: landscape) {
+  /*-------Navbar------*/
+  #navBar {
+    margin-left: 28em;
+  }
+  /*-------Main------*/
+  .welcomePart {
+    text-align: start;
+    margin-left: 2em;
+  }
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+}
