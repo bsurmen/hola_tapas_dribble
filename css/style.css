@@ -4,27 +4,11 @@ body {
   font-family: "Muli";
 }
 
-.gallery__item {
-  height: 15em;
-  max-width: 100%;
-  margin: 0.25em 0.5em;
-  color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .bodyContainer {
   background-color: #ffffff;
   border: 8px solid #401c3e;
   border-radius: 50px;
-  height: 100vh;
+  height: 100%;
   margin: 2%;
 }
 
@@ -37,7 +21,11 @@ body {
 }
 
 .colHalf {
-  width: 40vw;
+  display: inline-block;
+}
+
+.colFull {
+  display: block;
 }
 
 /*==========
@@ -84,38 +72,158 @@ body {
   color: white;
 }
 
-/*==========
-     MAIN
-  ==========*/
+/*==================
+     LEFT SECTION
+  ==================*/
 /*-------Welcome Part------*/
 .welcomePart {
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 1em;
 }
 
 /*-------Orange Box Part------*/
 #orangeBox {
   background-color: #ffc50a;
   margin: 1em;
+  padding-bottom: 1em;
   border: 0;
   border-radius: 1em;
+}
+
+.orangeBoxRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 1em;
 }
 
 #priWhite {
   background-color: white;
   margin: 0 1em;
+  padding: 2em;
   border: 0;
   border-radius: 1em;
 }
 
+#orangeBox h4 {
+  font-weight: 400;
+}
+
+#priWhite h3 {
+  color: #ffc50a;
+  font-size: 2rem;
+}
+
+#princhos {
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: gray;
+}
+
+.leftSide img {
+  display: none;
+}
+
+.bigTapas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/*==================
+     RIGHT SECTION
+  ==================*/
+#rightSide {
+  background-color: #fff9f0;
+}
+
+/*-------Pinchos Part------*/
+.titleAlign {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pinchosCard {
+  background-color: white;
+  border: 0;
+  border-radius: 2em;
+  margin: 1em;
+  padding: 1em;
+}
+
+.pinchosCardDown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.pinchosCardDown a {
+  color: #ffc50a;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.pinchosCard h6 {
+  margin-top: -2em;
+}
+
+/*-------Sales Statistics Part------*/
+#purpleCard {
+  background-color: #401c3e;
+  color: white;
+}
+
 @media (orientation: landscape) {
-  /*-------Navbar------*/
-  #navBar {
-    margin-left: 28em;
-  }
   /*-------Main------*/
   .welcomePart {
     text-align: start;
-    margin-left: 2em;
+    margin-left: 1em;
+  }
+  /*-------Orange Box Part------*/
+  #orangeBox {
+    height: 100%;
+  }
+  #priWhite {
+    text-align: center;
+  }
+  .leftSide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .leftSide img {
+    display: inline-block;
+    height: 16em;
   }
 }
 /*# sourceMappingURL=style.css.map */
