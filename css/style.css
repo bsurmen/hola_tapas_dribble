@@ -351,11 +351,11 @@ body {
     display: flex;
   }
   #navSpacer {
-    width: 31%;
+    width: 40%;
   }
   header {
     background: #fff9f0;
-    width: 69%;
+    width: 66%;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
   }
@@ -368,14 +368,14 @@ body {
   }
   #orangeBox {
     padding-bottom: 0.1em;
-    margin: 0;
+    margin-top: 2em;
   }
   #priWhite {
     margin: 1em;
   }
   .bigTapas img {
     height: 100%;
-    margin-top: 2em;
+    margin-top: 1em;
   }
   .orangeCardText {
     margin-top: 5em;
@@ -414,11 +414,14 @@ body {
   #orangeCard {
     padding: 1em;
   }
+  #orangeDottedCard {
+    width: 1em;
+  }
   #orangeCard img {
     width: 100%;
   }
   .orangeDown {
-    height: 57%;
+    height: 35%;
   }
   .largerAlign {
     display: -webkit-box;
@@ -428,26 +431,15 @@ body {
 }
 
 @media (min-width: 1200px) {
-  main {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .leftSide {
-    display: block;
-  }
-  #rightSide {
-    padding: 0;
-    width: 70%;
+  #navSpacer {
+    width: 30%;
   }
   header {
-    background: #fff9f0;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
+    width: 70%;
   }
+  /*==================
+     RIGHT SECTION
+  ==================*/
   #salesCards {
     width: 100%;
     display: -webkit-box;
@@ -456,20 +448,21 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    margin: .2em 2em;
   }
-  #orangeBox {
-    height: 15em;
+  #orangeDottedCard {
+    width: 8em;
+  }
+  #orangeCard {
+    width: 15em;
+  }
+  .orangeDown {
+    height: 35%;
   }
   .largerAlign {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-  }
-  .pinchosCard-lg {
-    width: 18em;
-  }
-  #orangeCard {
-    padding: 1em;
   }
 }
 /*# sourceMappingURL=style.css.map */
