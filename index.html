@@ -15,145 +15,205 @@
 
     <body>
         <div class="bodyContainer">
-            <!------Navbar------>
-            <nav id="navBar">
-                <ul class="navbarList">
-                    <li class="navItem active">
-                        <a class="navLink" href="#"><i class="fas fa-home"></i> Home</a>
-                    </li>
-                    <li class="navItem">
-                        <a class="navLink" href="#"><i class="far fa-clock"></i></a>
-                    </li>
-                    <li class="navItem">
-                        <a class="navLink" href="#"><i class="far fa-address-card"></i></a>
-                    </li>
-                    <li class="navItem">
-                        <a class="navLink" href="#"><i class="fas fa-cog"></i></a>
-                    </li>
-                </ul>
-            </nav>
-            <!------Navbar End------>
+            <div id="navContainer">
+                <div id="navSpacer"></div>
+                <header>
+
+                    <!------Navbar------>
+                    <nav id="navBar">
+                        <ul class="navbarList">
+                            <li class="navItem active">
+                                <a class="navLink" href="#"><i class="fas fa-home"></i> Home</a>
+                            </li>
+                            <li class="navItem">
+                                <a class="navLink" href="#"><i class="far fa-clock"></i></a>
+                            </li>
+                            <li class="navItem">
+                                <a class="navLink" href="#"><i class="far fa-address-card"></i></a>
+                            </li>
+                            <li class="navItem">
+                                <a class="navLink" href="#"><i class="fas fa-cog"></i></a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!------Navbar End------>
+                </header>
+
+            </div>
+
             <main>
 
-                <section>
+                <div class="leftSide">
                     <!------Welcome Part------>
                     <div class="welcomePart">
                         <h2><span class="boldFont">Hola, </span>Amigo </h2>
-                        <div class="">
-                            <h5 class="textMuted">Dec, 28&nbsp;&nbsp;&nbsp;02:45 PM</h5>
+                        <div id="date">
+                            <h5 class="textMuted">Dec, 28&nbsp;</h5>
+                            <h5 class="textMuted">02:45 PM</h5>
                         </div>
                     </div>
                     <!------/ .welcomePart------>
-                </section>
-                <section>
-                    <div class="leftSide">
-                        <!------Orange Container------>
-                        <div id="orangeBox" class="">
-                            <div class="orangeBoxRow">
-                                <div class="colHalf orangeBoxText">
-                                    <h4>Total <span class="boldFont">Statistics</span>
-                                    </h4>
-                                </div>
-                                <div class="colHalf">
-                                    <div aria-labelledby="dropdownMenu2">
-                                        <select id='gMonth2'>
-                                            <option value=''>Month</option>
-                                            <option value='1'>Janaury</option>
-                                            <option value='2'>February</option>
-                                            <option value='3'>March</option>
-                                            <option value='4'>April</option>
-                                            <option value='5'>May</option>
-                                            <option value='6'>June</option>
-                                            <option value='7'>July</option>
-                                            <option value='8'>August</option>
-                                            <option value='9'>September</option>
-                                            <option value='10'>October</option>
-                                            <option value='11'>November</option>
-                                            <option value='12'>December</option>
-                                        </select>
-                                    </div>
-                                </div>
+
+
+
+                    <!------Orange Container------>
+                    <div id="orangeBox" class="">
+                        <div class="orangeBoxRow">
+                            <div class="colHalf orangeBoxText">
+                                <h4>Total <span class="boldFont">Statistics</span>
+                                </h4>
                             </div>
-                            <div class="colFull">
-                                <div id="priWhite" class="">
-                                    <h3 class="boldFont">18.374 <span id="princhos" class="text-muted">/solid
-                                            princhos</span>
-                                    </h3>
+                            <div class="colHalf">
+                                <div aria-labelledby="dropdownMenu2">
+                                    <select id='gMonth2'>
+                                        <option value=''>Month</option>
+                                        <option value='1'>Janaury</option>
+                                        <option value='2'>February</option>
+                                        <option value='3'>March</option>
+                                        <option value='4'>April</option>
+                                        <option value='5'>May</option>
+                                        <option value='6'>June</option>
+                                        <option value='7'>July</option>
+                                        <option value='8'>August</option>
+                                        <option value='9'>September</option>
+                                        <option value='10'>October</option>
+                                        <option value='11'>November</option>
+                                        <option value='12'>December</option>
+                                    </select>
                                 </div>
                             </div>
                         </div>
-                        <!------/ Orange Container End------>
-                        <!------ Big Tapas Image------>
-                        <div class="bigTapas">
-                            <img src="img/tapas_big.jpg" alt="">
+
+                        <div class="colFull">
+                            <div id="priWhite" class="">
+                                <h3 class="boldFont">18.374 <span id="princhos" class="text-muted">/solid
+                                        princhos</span>
+                                </h3>
+                            </div>
                         </div>
-                        <!------/ Big Tapas Image End------>
+
                     </div>
-                    <!------/ Left Side End------>
-                </section>
+                    <!------/ Orange Container End------>
+
+                    <!------ Big Tapas Image------>
+                    <div class="bigTapas">
+                        <img src="img/tapas_big.jpg" alt="">
+                    </div>
+                    <!------/ Big Tapas Image End------>
+
+                </div>
+                <!------/ Left Side End------>
 
                 <aside id="rightSide">
                     <!------ Pinchos Of The Day------>
+
                     <div class="titleAlign">
                         <h4><span class="font-weight-bold">Pinchos </span>Of The Day</h4>
                         <a href=""><i class="fas fa-sliders-h"></i></a>
                     </div>
-                    <div class="pinchosCard">
-                        <h5 class="boldFont">With jamon and sweet pepper</h5>
-                        <h6 class="textMuted">100g</h6>
-                        <div class="pinchosCardDown">
-                            <a href="#" class="cardLink boldFont">1 &euro;</a>
-                            <a href="#" class="cardLink"><img src="img/tapas1.jpg" alt="" /></a>
+
+                    <div id="pinchosCardsDiv" class="landscapeAlign">
+                        <div class=" pinchosCard pinchosCard-lg">
+                            <h5 class="boldFont">With jamon and sweet pepper</h5>
+                            <h6 class="textMuted">100g</h6>
+                            <div class="pinchosCardDown">
+                                <a href="#" class="cardLink">
+                                   <h4 class="boldFont">1 &euro;</h4>
+                                </a>
+                                <a href="#" class="cardLink"><img src="img/tapas1.jpg" alt="" /></a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="pinchosCard">
-                        <h5 class="boldFont">With shrimp and cherry tomato</h5>
-                        <h6 class="textMuted">115g</h6>
-                        <div class="pinchosCardDown">
-                            <a href="#" class="cardLink boldFont">1.8 &euro;</a>
-                            <a href="#" class="cardLink"><img src="img/tapas2.jpg" alt="" /></a>
+
+                        <div class="pinchosCard pinchosCard-lg">
+                            <h5 class="boldFont">With shrimp and cherry tomato</h5>
+                            <h6 class="textMuted">115g</h6>
+                            <div class="pinchosCardDown">
+                                <a href="#" class="cardLink">
+                                   <h4 class="boldFont">1 &euro;</h4>
+                                </a>
+                                <a href="#" class="cardLink"><img src="img/tapas2.jpg" alt="" /></a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="pinchosCard">
-                        <h5 class="boldFont">Red Peppers with mashed Tuna</h5>
-                        <h6 class="textMuted">100g</h6>
-                        <div class="pinchosCardDown">
-                            <a href="#" class="cardLink boldFont">1 &euro;</a>
-                            <a href="#" class="cardLink"><img src="img/tapas3.jpg" alt="" /></a>
+
+                        <div class="pinchosCard pinchosCard-lg">
+                            <h5 class="boldFont">Red Peppers with mashed Tuna</h5>
+                            <h6 class="textMuted">100g</h6>
+                            <div class="pinchosCardDown">
+                                <a href="#" class="cardLink ">
+                                    <h4 class="boldFont">1 &euro;</h4>
+                                </a>
+                                <a href="#" class="cardLink"><img src="img/tapas3.jpg" alt="" /></a>
+                            </div>
                         </div>
                     </div>
                     <!------/ Pinchos Of The Day End------>
+
                     <!------ Sales Statistics------>
                     <section>
                         <div class="titleAlign">
-                            <h4><span class="font-weight-bold">Sales </span>Statistics</h4>
+                            <h4 class="lightFont"><span class="boldFont">Sales </span>Statistics</h4>
                             <a href="#" class="cardLink">
-                                <h6>View All</h6>
+                                View All
                             </a>
                         </div>
-                    </section>
-                    <section>
-                        <div id="purpleCard" class="pinchosCard">
-                            <h5>Sales <span class="boldFont">Leader</span></h5>
-                            <h6 class="textMuted">Stuffed peppers with Tuna</h6>
-                            <div class="pinchosCardDown">
 
-                                <h3>1.70 <span class="textMuted">Sold</span></h3>
+                        <div id="salesContainer" class="largerAlign">
+                            <div id="salesCards" class="landscapeAlign">
+                                <div>
+                                    <!------ Purple Card------>
+                                    <div id="purpleCard" class="pinchosCard">
+                                        <h3>Sales <span class="boldFont">Leader</span></h3>
+                                        <h5 class="textMuted">Stuffed peppers with Tuna</h5>
+                                        <div class="salesCardDown">
 
-                                <a href="">
-                                    <h6>Details</h6>
-                                </a>
+                                            <h3>1.370 <span class="textMuted">sold</span></h3>
+
+                                            <a href="">
+                                                Details
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <!------ Turquaz Card------>
+                                    <div id="turquazCard" class="pinchosCard">
+                                        <div class="salesCardDown">
+                                            <h3>Monthly <br><span class="boldFont">Revenue</span></h3>
+                                            <h2>29.4 &euro;</h2>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!------ Orange Dotted Card------>
+                                <div id="orangeDottedCard" class="pinchosCard">
+                                    <div class="orangeCardText boldFont">
+                                        <h2>+</h2>
+                                        <h4>ADD MARK</h4>
+                                    </div>
+                                </div>
+
+                                <!------ Orange Card------>
+                                <div id="orangeCard" class="pinchosCard">
+                                    <h3 class="boldFont">Coming <span class="lightFont">Soon</span></h3>
+                                    <h5 class="lightFont">Breaded
+                                        Octopus with Sauce</h5>
+                                    <div class="salesCardDown pinchosCard orangeDown">
+                                        <img src="img/tapas4.jpg" alt="">
+                                        <a href="" class="boldFont">
+                                            &rarr;
+                                        </a>
+                                    </div>
+                                </div>
+                                <!------/ Orange Card End------>
                             </div>
                         </div>
                     </section>
-
-
                     <!------/ Sales Statistics End------>
                 </aside>
-
+                <!------/ Right Side End------>
             </main>
-
+            <!------/ Main Content End------>
         </div>
+        <!------/ Body Container End------>
         <script src="index.js"></script>
     </body>
 

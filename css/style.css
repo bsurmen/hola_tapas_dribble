@@ -16,6 +16,10 @@ body {
   font-weight: 800;
 }
 
+.lightFont {
+  font-weight: 100;
+}
+
 .textMuted {
   color: gray;
 }
@@ -89,6 +93,14 @@ body {
   margin: 0 1em;
 }
 
+#date {
+  display: block;
+}
+
+#date h5 {
+  margin: 0;
+}
+
 /*-------Orange Box Part------*/
 #orangeBox {
   background-color: #ffc50a;
@@ -124,7 +136,7 @@ body {
 }
 
 #priWhite h3 {
-  color: #ffc50a;
+  color: #ff5b01;
   font-size: 2rem;
 }
 
@@ -152,6 +164,9 @@ body {
   ==================*/
 #rightSide {
   background-color: #fff9f0;
+  padding-bottom: 1em;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
 }
 
 /*-------Pinchos Part------*/
@@ -180,15 +195,19 @@ body {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .pinchosCardDown a {
-  color: #ffc50a;
+  color: #ff5b01;
   font-size: 2rem;
   text-decoration: none;
+}
+
+.pinchosCardDown h4 {
+  width: 1.8em;
 }
 
 .pinchosCard h6 {
@@ -196,20 +215,65 @@ body {
 }
 
 /*-------Sales Statistics Part------*/
-#purpleCard {
-  background-color: #401c3e;
+.salesCardDown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.salesCardDown a {
   color: white;
 }
 
-@media (orientation: landscape) {
+/*-------Purple Card------*/
+#purpleCard {
+  background: #401c3e;
+  color: white;
+  padding: 2em;
+}
+
+/*-------Turquaz Card------*/
+#turquazCard {
+  background: #8dc1b9;
+  color: white;
+}
+
+/*-------Orange Dotted Card------*/
+#orangeDottedCard {
+  background: white;
+  color: #ffc50a;
+  border: 5px dotted #ffc50a;
+  text-align: center;
+  padding: 5em 0;
+}
+
+/*-------Orange Card------*/
+#orangeCard {
+  background: #ff5b01;
+  color: white;
+}
+
+#orangeCard a {
+  color: #ff5b01;
+  text-decoration: none;
+}
+
+@media (orientation: landscape), (min-width: 600px) {
   /*-------Main------*/
   .welcomePart {
     text-align: start;
     margin-left: 1em;
+    display: block;
   }
   /*-------Orange Box Part------*/
   #orangeBox {
-    height: 100%;
+    width: 100%;
+    padding-bottom: 1.5em;
   }
   #priWhite {
     text-align: center;
@@ -224,6 +288,188 @@ body {
   .leftSide img {
     display: inline-block;
     height: 16em;
+  }
+  /*-------Pinchos Part------*/
+  .pinchosCard {
+    padding: 2em;
+    margin: 0.3em;
+  }
+  .pinchosCardDown a {
+    font-size: 1.2rem;
+  }
+  .landscapeAlign {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  #orangeDottedCard {
+    padding: 4em;
+  }
+  #orangeDottedCard h2,
+  #orangeDottedCard h4 {
+    margin: 0;
+  }
+  .orangeCardText {
+    margin-top: 3em;
+  }
+  .titleAlign {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 1em;
+    font-size: 2em;
+  }
+  #salesCards {
+    margin: 0 5em;
+  }
+  #turquazCard h2 {
+    margin-left: 1em;
+    width: 3em;
+  }
+}
+
+@media (min-width: 1021px) {
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #navContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #navSpacer {
+    width: 31%;
+  }
+  header {
+    background: #fff9f0;
+    width: 69%;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+  }
+  /*==================
+     LEFT SECTION
+  ==================*/
+  .leftSide {
+    display: block;
+    margin: 0 2em;
+  }
+  #orangeBox {
+    padding-bottom: 0.1em;
+    margin: 0;
+  }
+  #priWhite {
+    margin: 1em;
+  }
+  .bigTapas img {
+    height: 100%;
+    margin-top: 2em;
+  }
+  .orangeCardText {
+    margin-top: 5em;
+  }
+  /*==================
+     RIGHT SECTION
+  ==================*/
+  #rightSide {
+    padding: 0;
+    width: 70%;
+  }
+  #pinchosCardsDiv img {
+    width: 100%;
+  }
+  .pinchosCard-lg {
+    margin: 0 1em;
+  }
+  .pinchosCard-lg a {
+    font-size: 1em;
+  }
+  #salesCards {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0 0.5em;
+  }
+  .landscapeAlign {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #orangeCard {
+    padding: 1em;
+  }
+  #orangeCard img {
+    width: 100%;
+  }
+  .orangeDown {
+    height: 57%;
+  }
+  .largerAlign {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (min-width: 1200px) {
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .leftSide {
+    display: block;
+  }
+  #rightSide {
+    padding: 0;
+    width: 70%;
+  }
+  header {
+    background: #fff9f0;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+  }
+  #salesCards {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #orangeBox {
+    height: 15em;
+  }
+  .largerAlign {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .pinchosCard-lg {
+    width: 18em;
+  }
+  #orangeCard {
+    padding: 1em;
   }
 }
 /*# sourceMappingURL=style.css.map */
